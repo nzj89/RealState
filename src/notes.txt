@@ -1,0 +1,23 @@
+Google api key, VPN new zealand:
+================================
+AIzaSyCkR5iY6QbeZ04zxOwazQH3EFsiX-kf1KI 
+
+
+https://www.ouestfrance-immo.com/immobilier/vente/maison/lassay-les-chateaux-53-53127/
+listing class: annLink
+===
+https://www.bienici.com/recherche/achat/lassay-les-chateaux-53110
+listing class: sideListInside
+
+
+
+
+
+======================☕☕☕☕☕☕☕======================☕☕☕☕☕☕☕======================☕☕☕☕☕☕☕
+
+======================☕☕☕☕☕☕☕======================☕☕☕☕☕☕☕======================☕☕☕☕☕☕☕
+
+Areas for Improvement:
+Aesthetic Enhancements: While the design is clean, adding more visual elements or modern UI components could make it even more appealing.
+Mobile Responsiveness: Ensure the site is fully responsive and looks good on all devices, including tablets and smartphones.
+Additional Features: Adding features like user login, personalized property recommendations, or a more detailed search filter could elevate the user experience.
