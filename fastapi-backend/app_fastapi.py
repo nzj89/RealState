@@ -275,8 +275,13 @@ async def rank_properties(request: Request):
         return {"rankedProperties": None, "error": str(e)}
 
 # Main
+"""if __name__ == "__main__":
+    app.run(debug=True, port=5000)  # Start Flask development server"""
+    
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)  # Start Flask development server
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)  
 
 """
 http://127.0.0.1:8000/docs#/default/open_website__get
