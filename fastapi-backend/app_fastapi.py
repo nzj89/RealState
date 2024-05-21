@@ -60,7 +60,11 @@ chat_prompt_format = (
 fastApiHost_ip = socket.gethostbyname(socket.gethostname())
 print("FastAPI Host IP:", fastApiHost_ip)
 
-origins = ["http://localhost:8080", "http://192.168.1.21:8080"]
+origins = [
+    "http://localhost:8080",
+    "http://192.168.1.21:8080",
+    "https://main--nzrealstate.netlify.app"
+]
 
 app.add_middleware(
        CORSMiddleware,

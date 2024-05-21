@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import { mapState, mapMutations } from 'vuex';
 
 export default {
@@ -30,7 +29,9 @@ export default {
     sendMessage() {
       this.setLoading(true);
       this.SET_TROUBLESHOOTING_MESSAGE('Sending request to backend...');
-      axios.post('http://127.0.0.1:8000/generate-story', { prompt: this.prompt })
+      
+      // Use the global axios instance
+      this.$axios.post('/generate-story', { prompt: this.prompt })
         .then(response => {
           console.log('Front end received an Axios Response:', response);
           const responseData = response.data;
