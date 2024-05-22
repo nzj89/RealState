@@ -45,7 +45,7 @@ console.log("Vue.js Host IP:", store.state.vuejsHostIP);
 //   });
 
 // Use this for production with Render
-const renderBackendURL = 'https://fastapibe.onrender.com';
+const renderBackendURL = 'https://fastapi-backend4.onrender.com';
 const instance = axios.create({
   baseURL: renderBackendURL,
 });
