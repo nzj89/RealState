@@ -28,7 +28,6 @@
 <script>
 import { mapState, mapActions, mapGetters } from 'vuex';
 import PropertyListing from "./PropertyListing.vue";
-import axios from 'axios';
 
 export default {
   components: {
@@ -73,7 +72,7 @@ export default {
       this.$store.commit('SET_TROUBLESHOOTING_MESSAGE', 'Sending request to rank properties with AI.');
       console.log('propertyListings we are starting the rank with AI function on front end', this.propertyListings);
 
-      axios.post('http://127.0.0.1:8000/rank-properties', { propertiesList: this.propertyListings })
+      this.$axios.post('/rank-properties', { propertiesList: this.propertyListings })
         .then(response => {
           console.log('Front end received an Axios Response from ranking properties:', response);
           const responseData = response.data;
