@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import { mapState, mapMutations } from 'vuex';
 
 export default {
@@ -48,7 +47,7 @@ export default {
     submitUrl() {
       this.setLoading(true);
       this.SET_TROUBLESHOOTING_MESSAGE('Sending URL to backend for processing.');
-      axios.post('http://127.0.0.1:8000/process-url', { url: this.url })
+      this.$axios.post('/process-url', { url: this.url })
         .then(response => {
           const responseData = response.data;
           const listingsData = responseData.listingsArrayFromBackend;
